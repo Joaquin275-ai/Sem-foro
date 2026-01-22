@@ -1,0 +1,81 @@
+
+.semaforo {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.luz {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #555; /* apagado */
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.luz.rojo {
+    background-color: red;
+    box-shadow: 0 0 25px red;
+}
+
+.luz.amarillo {
+    background-color: yellow;
+    box-shadow: 0 0 25px yellow;
+}
+
+.luz.verde {
+    background-color: green;
+    box-shadow: 0 0 25px green;
+}
+
+
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#btnOff {
+    margin-top: 20px;
+    padding: 14px 32px;
+    font-size: 18px;
+    width: 200px;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+.estado {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.estado.rojo {
+    color: red;
+}
+
+.estado.amarillo {
+    color: goldenrod;
+}
+
+.estado.verde {
+    color: green;
+}
+
+.estado.apagado {
+    color: #444;
+}
